@@ -1,9 +1,9 @@
-#Actor Model in F# with Akka.NET and Docker
-##Workshop
+# Actor Model in F# with Akka.NET and Docker
+## Workshop
 
 This session will be a mix of presentation and hands-on labs.  If you want to participate in the hands-on portion, we'll be using the following tools and servers:
 
-##Pre-requisites
+## Pre-requisites
   - Visual Studio Code
   - Visual Studio 2015-2017
   - Docker 
@@ -13,16 +13,16 @@ This session will be a mix of presentation and hands-on labs.  If you want to pa
 There will be a handful of labs that we'll work on.  Most will have a scaffolded solution that contains entities and helper code (along with NuGet packages - using Paket).  You can either code along or view the solutions in hidden files.  All solutions will be placed in a GitHub repo.
 
 
-###Visual Studio Code
+### Visual Studio Code
 Download: https://code.visualstudio.com
 
-###Visual Studio 
+### Visual Studio 
 Download: https://www.visualstudio.com/downloads/
 
-###Docker (community edition)
+### Docker (community edition)
 Download: https://www.docker.com/community-edition
 
-###RethinkDB
+### RethinkDB
 You can download the server here: http://rethinkdb.com/docs/install/
 However, it will be used a RethinkDB Docker instance
 
@@ -38,7 +38,7 @@ After running the EXE, open a browser and navigate to
 You should see the RethinkDB dashboard.  Play around with it -- we'll be using it a bit to create new tables and clear out data.
 
 
-###EventStore
+### EventStore
 You can download the server here: https://geteventstore.com/downloads/
 However, it will be used an EventStore Docker instance
 
@@ -55,7 +55,7 @@ Once running, open up a browser and navigate to:
 You should be prompted for credentials.  Type **admin** for the user name and **changeit** for the password.  (You can change these later if you'd like.)
 You should then be taken to the EventStore dashboard.
 
-##Workshop Agenda
+## Workshop Agenda
 ####	Lab 1:
 - Implementing and sending messages to in-proc Actor
 - Implementing a Remote Actor System
