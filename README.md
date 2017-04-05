@@ -1,9 +1,9 @@
-#Actor Model in F# with Akka.NET and Docker
-##Workshop
+# Actor Model in F# with Akka.NET and Docker
+## Workshop
 
 This session will be a mix of presentation and hands-on labs.  If you want to participate in the hands-on portion, we'll be using the following tools and servers:
 
-##Pre-requisites
+## Pre-requisites
   - Visual Studio Code
   - Visual Studio 2015-2017
   - Docker 
@@ -11,22 +11,24 @@ This session will be a mix of presentation and hands-on labs.  If you want to pa
 There will be a handful of labs that we'll work on.  Most will have a scaffolded solution that contains entities and helper code (along with NuGet packages - using Paket).  You can either code along or view the solutions in hidden files.  All solutions will be placed in a GitHub repo.
 
 
-###Visual Studio Code
+### Visual Studio Code
 Download: https://code.visualstudio.com
 
-###Visual Studio 
+### Visual Studio 
 Download: https://www.visualstudio.com/downloads/
 
-###Docker (community edition)
+### Docker (community edition)
 It’s easy to get started with Docker. First, you have to install the Docker Engine on your machine (or your server). Follow the official instructions for Windows 10, Mac, or Linux.
-Download: https://www.docker.com/community-edition
 
-###RethinkDB
+Download: https://www.docker.com/community-edition
+
+### RethinkDB
 RethinkDB (to act as a local topic bus)
 
 RethinkDB is an open-source, distributed database built to store JSON documents and effortlessly scale to multiple machines. It's easy to set up and learn and features a simple but powerful query language that supports table joins, groupings, aggregations, and functions.
 by default, RethinkDB only accepts connections from localhost, otherwise, `rethinkdb --bind all` will bind to all network interfaces available to the container 
-##Workshop Agenda
+
+## Workshop Agenda
 ####	Lab 1:
 - Implementing and sending messages to in-proc Actor
 - Implementing a Remote Actor System
