@@ -8,7 +8,7 @@ This session will be a mix of presentation and hands-on labs.  If you want to pa
   - Visual Studio 2015-2017
   - Docker 
 
-There will be a handful of labs that we'll work on.  Most will have a scaffolded solution that contains entities and helper code (along with NuGet packages - using Paket).  You can either code along or view the solutions in hidden files.  All solutions will be placed in a GitHub repo.
+There will be a handful of labs that we'll work on.  Most will have a scaffolded solution that contains entities and helper code (along with NuGet packages - using Paket).  You can either code along or view the solutions in hidden files.  _All solutions will be placed in a GitHub repo_.
 
 
 ### Visual Studio Code
