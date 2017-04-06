@@ -1,0 +1,80 @@
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/Google.ProtocolBuffers.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/Google.ProtocolBuffers.Serialization.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/Helios.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/System.Collections.Immutable.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/Newtonsoft.Json.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/Akka.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/Akka.Remote.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/FsPickler.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/FSharp.PowerPack.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/FSharp.PowerPack.Linq.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/Akka.FSharp.dll
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/AkkaExamples.exe.mdb
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/bin/Debug/AkkaExamples.exe
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/obj/x86/Debug/AkkaExamples.exe
+/Users/riccardoterrell/Documents/Presentations/Actor_Clustering_RaspPi/ActorRemoteRec/AkkaExamples/obj/x86/Debug/AkkaExamples.exe.mdb
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/AkkaExamples.exe.mdb
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/AkkaExamples.exe
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/obj/x86/Debug/AkkaExamples.exe
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/obj/x86/Debug/AkkaExamples.exe.mdb
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/Google.ProtocolBuffers.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/Google.ProtocolBuffers.Serialization.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/Helios.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/Akka.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/Akka.Remote.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/FSharp.PowerPack.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/FSharp.PowerPack.Linq.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/Akka.FSharp.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/FsPickler.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/System.Collections.Immutable.dll
+/Users/riccardoterrell/ad/ActorRemote/AkkaExamples/bin/Debug/Newtonsoft.Json.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/AkkaExamples.exe.mdb
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/AkkaExamples.exe
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/obj/x86/Debug/AkkaExamples.exe
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/obj/x86/Debug/AkkaExamples.exe.mdb
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/Google.ProtocolBuffers.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/Google.ProtocolBuffers.Serialization.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/Helios.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/Akka.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/Akka.Remote.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/FSharp.PowerPack.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/FSharp.PowerPack.Linq.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/Akka.FSharp.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/FsPickler.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/System.Collections.Immutable.dll
+/Users/Riccardo/ad/ActorRemote Working/AkkaExamples/bin/Debug/Newtonsoft.Json.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/AkkaExamples.exe.mdb
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/AkkaExamples.exe
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/obj/x86/Debug/AkkaExamples.exe
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/obj/x86/Debug/AkkaExamples.exe.mdb
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/Google.ProtocolBuffers.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/Google.ProtocolBuffers.Serialization.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/Helios.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/Akka.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/Akka.Remote.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/FSharp.PowerPack.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/FSharp.PowerPack.Linq.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/Akka.FSharp.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/FsPickler.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/System.Collections.Immutable.dll
+/Users/Riccardo/ad/ActorRemote/AkkaExamples/bin/Debug/Newtonsoft.Json.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/AkkaExamples.exe.mdb
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/AkkaExamples.exe
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/obj/x86/Debug/AkkaExamples.exe
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/obj/x86/Debug/AkkaExamples.exe.mdb
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/Google.ProtocolBuffers.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/Google.ProtocolBuffers.Serialization.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/Helios.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/Akka.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/Akka.Remote.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/FSharp.PowerPack.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/FSharp.PowerPack.Linq.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/Akka.FSharp.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/FsPickler.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/System.Collections.Immutable.dll
+/Users/riccardoterrell/My/Skillsmatter/Workshop/Lab4/ActorRemote/AkkaExamples/bin/Debug/Newtonsoft.Json.dll
