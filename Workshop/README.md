@@ -116,3 +116,16 @@ You should then be taken to the EventStore dashboard.
 		- https://petabridge.com/blog/cluster-sharding-technical-overview-akkadotnet/
 
 
+### Docker scripts
+-	F# Docker container
+	
+		Docker pull fsharp
+		Docker run -it fsharp
+ 
+-	Akka.Net Docker File & Linking
+	creating two instances of docker running Akka.NET (using DockerFile in folder Lab4)
+		
+		docker build -f Dockerfile -t akka/1 .
+		docker run -i --name akka1 --net host –p 9244:9234 akka/1
+		docker run -it --link akka/1:akka1 --name akka2 akka1
+ 

@@ -1,0 +1,31 @@
+[DEBUG][4/7/2017 11:41:04 AM][Thread 0001][EventStream] StandardOutLogger started
+[DEBUG][4/7/2017 11:41:04 AM][Thread 0001][EventStream(remote-system)] Logger log1-DefaultLogger [DefaultLogger] started
+[DEBUG][4/7/2017 11:41:04 AM][Thread 0001][EventStream(remote-system)] StandardOutLogger being removed
+[DEBUG][4/7/2017 11:41:04 AM][Thread 0001][EventStream(remote-system)] Logger log1-DefaultLogger [DefaultLogger] started
+[DEBUG][4/7/2017 11:41:04 AM][Thread 0001][EventStream(remote-system)] StandardOutLogger being removed
+[DEBUG][4/7/2017 11:41:04 AM][Thread 0001][EventStream(remote-system)] Default Loggers started
+[INFO][4/7/2017 11:41:04 AM][Thread 0001][remoting] Starting remoting
+[DEBUG][4/7/2017 11:41:04 AM][Thread 0009][remoting] Starting prune timer for endpoint manager...
+[INFO][4/7/2017 11:41:04 AM][Thread 0001][remoting] Remoting started; listening on addresses : [akka.tcp://remote-system@10.211.55.2:8091]
+[INFO][4/7/2017 11:41:04 AM][Thread 0001][remoting] Remoting now listens on addresses: [akka.tcp://remote-system@10.211.55.2:8091]
+[WARNING][4/7/2017 11:41:04 AM][Thread 0001][ActorSystem(remote-system)] NewtonSoftJsonSerializer has been detected as a default serializer. It will be obsoleted in Akka.NET starting from version 1.5 in the favor of Hyperion (for more info visit: http://getakka.net/docs/Serialization#how-to-setup-hyperion-as-default-serializer ). If you want to suppress this message set HOCON `akka.suppress-json-serializer-warning` config flag to on.
+[INFO][4/7/2017 11:41:04 AM][Thread 0001][ActorSystem(remote-system)] {
+  akka : {
+    log-config-on-start : on
+    stdout-loglevel : DEBUG
+    loglevel : DEBUG
+    actor : {
+      provider : "Akka.Remote.RemoteActorRefProvider, Akka.Remote"
+    }
+    remote : {
+      helios : {
+        tcp : {
+          transport-protocol : tcp
+          port : 8091
+          hostname : 10.211.55.2
+        }
+      }
+    }
+  }
+}
+Remote Actor remote-system listening...

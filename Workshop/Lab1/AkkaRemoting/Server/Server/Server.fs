@@ -25,8 +25,8 @@ let main argv =
     //      use location transperency to localize the address of the remote Actor created in the Client project,
     //      then, with the Client project running, send a message to the remote Actor
     //      Note: The actor system running in the Client project has a different name than the local one
-    let remoteActorSel =  " < CODE HERE > "
-    // remoteActorSel <! "Hello from here!"
+    let remoteActorSel = select "akka.tcp://remote-system@localhost:9234/user/my-actor" localSystem
+    remoteActorSel <! "Hello from here!"
 
     // (5)  create an Actor using code quotation <@@>,
     //      then remote deploy the Actor created to the Client project
@@ -51,8 +51,10 @@ let main argv =
     //  That means, there is no need to stop your remote nodes to reload shared actor assemblies when updated. 
     //  Note: Code embedded inside quotation must use only functions
 
-    let aref = " < CODE HERE > "
-        // spawnRemote 
+    let aref =
+        spawnRemote localSystem "akka.tcp://remote-system@localhost:9234/" "myRemoteActor" 
+            <@ actorOf (fun msg -> System.Console.ForegroundColor <- System.ConsoleColor.Red
+                                   printfn "received 10  '%s'" msg) @>
 
     aref <! "Message Here"                                   
     

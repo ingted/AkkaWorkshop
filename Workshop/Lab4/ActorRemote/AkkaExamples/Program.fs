@@ -29,8 +29,8 @@ let main argv =
             }    
             remote.helios.tcp {
                 transport-protocol = tcp
-                port = 8091              
-                hostname = "10.211.55.2" #0.0.0.0 
+                port = 9234                 
+                hostname = 0.0.0.0 
                 }
         }
         """

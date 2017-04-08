@@ -59,12 +59,12 @@ let main argv =
     printfn "Actor-System %s listening..." system.Name
    
     // (1)  Refactor the Actor to forward the incoming message
-    //      to the remote "consumerActor" Actor running in the Consumer project.
+    //      to the remote "concumerActor" Actor running in the Consumer project.
     //      Note : detect the remote address using the F# API select function
-    let producerActor (mailbox : Actor<_>) = 
+    let producerActor consumer (mailbox : Actor<_>) = 
         let rec loop() = actor { 
             let! (cmd:HandleNewGameEvent) = mailbox.Receive()                        
-            
+            consumer <! cmd
             printfn "Sending new event to consumer : Batter %s against Pitcher %s with pitch sequence %s was a %d." cmd.batter cmd.pitcher cmd.sequence cmd.success
             // (-) Option: plug EventStore here
             return! loop() }
@@ -73,7 +73,7 @@ let main argv =
     let consumerRemoteActor = select "akka.tcp://consumer-baseballStats@localhost:9234/user/gameCoordinator" system
     
     // (2)  update the actor accordingly with (1)
-    let producer = spawn system "producer" producerActor
+    let producer = spawn system "producer" (producerActor consumerRemoteActor)
     
     let dbTable = RethinkDB.R.Db("baseball").Table("plays")   
     let feeds = dbTable.Changes().RunChanges<Play>(rethinkConnection.Value)
@@ -109,8 +109,7 @@ let main argv =
                                     printfn "id change : %s" nv.gameId
                                   
                                     // (3)  send the "cmd"" message to the producer Actor (2)
-                                    
-                                    )
+                                    producer <! cmd)
                                        
     Console.ReadLine() |> ignore
     system.Terminate().Wait()

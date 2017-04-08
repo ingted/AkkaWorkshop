@@ -112,7 +112,9 @@ module Actors =
                     //      Use the AppendToStreamAsync API to store the eventData
                     //      The computation is asynchronous (Task<_>), thus, use the "PipeTo" operator 
                     //      to send the output to the current mailbox recipient 
-
+                    eventConnection.Value.AppendToStreamAsync(msg.id, ExpectedVersion.Any, eventData)
+                    |> Async.AwaitTask
+                    |!> mailbox.Self
                     
                     pevent) state                    
             return! loop newState
@@ -223,18 +225,18 @@ module Actors =
                     spawn mailbox actorGameId (gameActor gameId gameDate)
                 else gameActorChild
             
-            let pitcherSuper =
-                let pitcherSuper = mailbox.Context.Child("pitcherSuper")
-                if pitcherSuper.IsNobody() then spawn mailbox "pitcherSuper" pitcherSupervisor                           
-                else pitcherSuper
-
             // (2)  Implement a batterSuper Actor 
             //      if the current Context is not aware of the actor batterSupervisor, then spawn a new one
             //      otherwise return the batterSuper from the Context
             let batterSuper = 
-                // remove the line below and add the Avtor implementtaion
-                pitcherSuper
+                let batterSuper = mailbox.Context.Child("batterSuper")                
+                if batterSuper.IsNobody() then spawn mailbox "batterSuper" batterSupervisor
+                else batterSuper
 
+            let pitcherSuper =
+                let pitcherSuper = mailbox.Context.Child("pitcherSuper")
+                if pitcherSuper.IsNobody() then spawn mailbox "pitcherSuper" pitcherSupervisor                           
+                else pitcherSuper
 
             gameActor <! cmd
             batterSuper <! cmd
@@ -280,19 +282,21 @@ let main argv =
     Console.ForegroundColor <- ConsoleColor.Green
     printfn "Actor-System %s listening..." system.Name
 
+    // (1)  implement consumer Actor that receives messages from producer.
+    //      apply the akka-router option to spawn multiple routees 
+    //      Option : add Supervisor-Strategy
+    let concumerActor = spawn system "gameCoordinator" Actors.gameCoordinator
+
+    let router = Akka.Routing.RoundRobinPool 16
+
     let supervision = 
         Strategy.OneForOne(fun e ->
             match e with
             | _ -> Directive.Restart )
 
-    // (1)  implement consumer Actor that receives messages from producer.
-    //      apply the akka-router option to spawn multiple routees 
-    //          using Routing (Round-Robin) spawn-option  (check function spawnOpt)
-    //      Option : add Supervisor-Strategy
-    //
-    //      Note : the name of the actor will be used by the producer to push messages
-    let router =  " < CODE HERE > " // check Akka.Routing  
-    let consumerActor =  () // " < CODE HERE >  
+    let actor =
+        spawnOpt system "gameCoordinator" Actors.gameCoordinator
+        <| [ SpawnOption.SupervisorStrategy supervision; SpawnOption.Router router ]
 
     Console.ReadLine() |> ignore
     system.Terminate().Wait()
